@@ -76,7 +76,7 @@ export default {
   },
    methods: {
      getJobList:function(pageno,location,fulltime,name){
-          let url = "http://jobs.github.com/positions.json?";        
+          let url = "https://jobs.github.com/positions.json?";        
           if(location){
             url=url+`location=${location}`;
           }

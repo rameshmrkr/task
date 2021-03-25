@@ -1,0 +1,126 @@
+
+@import "~vue-material/dist/theme/engine";
+
+@include md-register-theme(
+  "dark",
+  (
+    theme: dark
+  )
+);
+/**{color: md-get-palette-color(blue, 800) !important;}*/
+@import "~vue-material/dist/theme/all";
+
+
+.m-30 {
+	margin-top: -30px !important;
+}
+.wrapper {
+	width: 100%;
+	display: table;
+}
+.github {
+	.md-img {
+		width: 60px;
+		margin: 0px;
+		float: left;
+		margin-top: -64px;
+		height: 60px;
+		background: #fff;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		padding: 5px;
+		border: 1px solid #ccc;
+	}
+	.cards {
+		img {
+			width: 100%;
+		}
+	}
+	.filters {
+		margin-top: -34px;
+		padding: 10px;
+		margin-bottom: 70px;
+		border-radius: 9px;
+		float: left;
+		width: 100%;
+	}
+	.card {
+		width: 100%;
+		padding: 0px 10px;
+		margin-bottom: 60px;
+		text-align: left;
+	}
+	.header {
+		background: #7373d8;
+		float: left;
+		width: 100%;
+		height: 188px;
+		padding-top: 30px;
+		color: #fff;
+		.logo {
+			float: left;
+			font-size: 30px;
+		}
+		.theme {
+			float: right;
+		}
+	}
+}
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+.md-medium-size-33 {
+	flex-basis: 33%;
+}
+.github-details {
+	.job-header {
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		padding-bottom: 15px;
+		.logo {
+			float: left;
+			width: 100px;
+			margin-right: 15px;
+			img {
+				width: 100%;
+			}
+		}
+		.title {
+			float: left;
+			h4 {
+				margin-bottom: 0px;
+			}
+			p {
+				margin-top: 0px;
+			}
+		}
+		.action {
+			float: right;
+			width: 130px;
+		}
+	}
+	.j-container {
+		max-width: 800px;
+	}
+	.card-title {
+		display: table;
+		width: 100%;
+	}
+	.card-t-body {
+		float: left;
+		width: 80%;
+	}
+	.card-t-action {
+		float: left;
+		width: 20%;
+	}
+}
+@media (max-width: 768px) {
+	.md-xsmall-size-100 {
+		flex-basis: 100%;
+	}
+}

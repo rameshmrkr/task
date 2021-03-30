@@ -77,7 +77,7 @@ export default {
   console.log("$route.params.id",this.$route.params.id);
   let id = this.$route.params.id;
     axios
-      .get(`https://jobs.github.com/positions/${id}.json`)
+      .get(`http://localhost:3000/positions/${id}.json`)
       .then(response => {
         console.log("response",response.data);
         this.items = response.data;
